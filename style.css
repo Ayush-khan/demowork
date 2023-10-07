@@ -2,17 +2,35 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    border:1px solid black;
+   
 }
+/* image LOGO header */
+.imglogo img{
+  position: relative;
+  transform: translate(100%);
+  height:70px;
+  /* background-color:black; */
+  /* border:2px solid red; */
+}
+#h23{
+  padding-top: 3px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+  color:white;
+  /* border: 2px solid rgb(255, 255, 255); */
+}
+
 /* navbar */
 
 .headermain{
      display: flex;
     justify-content: space-between; 
     align-items: center;
-    width: 97%;
+    width: 100%;
     margin: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: 50px;
     background-color: rgb(25, 25, 70);
     color:white;
@@ -22,6 +40,7 @@
     font-weight: 600;
     font-size: 1.2em;
 }
+/* image */
 .navigationbar{
     display:flex;
     justify-content: space-between;
@@ -45,13 +64,11 @@
     flex-direction: column;
     /* justify-content: space-between; */
     position: absolute;
-    top:65px;
-    left: 22px; /*margin left in the side bar to maintain gab*/
+    top:50px;
+    left: 0px; /*margin left in the side bar to maintain gab*/
     width: 230px;
-    height: 88%;
+    /* height: 100vh; */
     background-color:rgb(25, 25, 70) ;
-    /* b
-    order-end-start-radius: 2px solid green; */
 }
 .asidebarnav ul{
     display: flex;
@@ -59,6 +76,9 @@
     height: 90%;
     justify-content: space-between;
     margin-top: 40px;
+    list-style: none;
+    gap:5px;
+    /* border:none; */
 }
 .asidebarnav ul li>a{
     display: inline-block;
@@ -68,23 +88,29 @@
     height: 40px;
     line-height: 1.2em;
     font-size: 1.2em;
+    padding-top: 6px;
     text-align: center;
     color: rgb(104, 104, 199);
     font-weight: 600;
+    border:none;
+    border-left: 6px solid rgb(25, 25, 70);
+    border-right: 6px solid rgb(25, 25, 70);
 
 }
 .asidebarnav ul li>a:hover{
-     border-left: 4px solid rgb(30, 114, 197);
-     font-weight: 700;
+     border-left: 6px solid rgb(30, 114, 197);
+     border-right: 6px solid rgb(30, 114, 197);
+     background-color: #2195f325;
+     font-weight: 800;
 }
 /* main div */
 .mainclass{
-    width: 77%;
+    width: 80%;
     height: 78%;
     position: absolute;
     top:130px;
-    right: 20px;
-    border:2px solid rebeccapurple;
+    right: 9px;
+    /* border:2px solid rebeccapurple; */
 }
 /* circularindication points on the top of the main */
   /* topbar ship address */
@@ -94,13 +120,10 @@
     width: 74%;
     margin: auto;
     justify-content: space-between;
-    position: absolute;
-    top:85px;
-    right: 60px; 
-    /* position: relative;
-    transform: translate(0,39%); */
-    /* border:5px solid rgb(175, 20, 149); */
-    border:4px solid yellow;
+    position: relative;
+    top:30px;
+    left: 100px; 
+    /* border: 2px solid rebeccapurple; */
     
   }
   
@@ -115,7 +138,6 @@
     height: 1.5em;
     border-radius: 50%;
     background-color: #364152;
-    /* outline:rgb(255, 0, 0) dashed; */
     color: white;
     text-align: center;
     font-size: .9em;
@@ -125,7 +147,23 @@
   /* line in between the circle in the top section */
   .lin {
     text-decoration: none solid rgb(43, 51, 63);
-    width: 11em;
+    width: 20%;
     border-bottom: 1px solid #BDBDBD;
     align-self: center;
   }
+  /* responsiveness */
+  @media (max-width: 760px) {
+    .lin {
+      /* height:309px; */
+        width: 15%; /* Change the width when the screen width is smaller than 50vw */
+    }
+    .topbar{
+      width:50%;
+    }
+    .mainclass{
+      width:60%;
+    }
+    .asidebarnav{
+      width:200px;
+    }
+}
