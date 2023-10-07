@@ -9,6 +9,7 @@
   position: relative;
   transform: translate(100%);
   height:70px;
+  color: #BDBDBD;
   /* background-color:black; */
   /* border:2px solid red; */
 }
@@ -19,6 +20,7 @@
   text-align: center;
   font-size: 2em;
   color:white;
+  text-shadow: 4px 4px 5px #BDBDBD;
   /* border: 2px solid rgb(255, 255, 255); */
 }
 
@@ -36,9 +38,11 @@
     color:white;
 }
 .headermain p{
-    margin-left: 10px;
-    font-weight: 600;
-    font-size: 1.2em;
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 1.5em; 
+    color: #BDBDBD;
+    text-shadow: 1px 1px 2px #BDBDBD;
 }
 /* image */
 .navigationbar{
@@ -49,14 +53,20 @@
     margin-right: 10px;
 }
 .adminpanel, .account{
+  display: flex;
+  gap:4px;
+  margin: 2px;
     background-color: #000000;
     padding: 5px;
+    /* gap:3px; */
     color:#BDBDBD;
     font-weight: 200;
-    box-shadow: 2px 1px 1px gray;
+    box-shadow: 3px 1px 1px gray;
 
 }
-
+.adminpanel:hover, .account:hover{
+  box-shadow: 3px 1px 1px gray inset
+}
 /* aside Nav bar   */
 .asidebarnav{
     /* margin-top: 40px;   */
